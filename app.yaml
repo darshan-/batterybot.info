@@ -13,3 +13,6 @@ handlers:
 
 - url: /changelog
   script: _go_app
+
+- url: /sourcecode
+  script: _go_app

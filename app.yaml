@@ -8,6 +8,8 @@ handlers:
   static_files: static/index.html
   upload: static/index.html
 
+- url: /faq
+  script: _go_app
 
-- url: /dontgo/.*
+- url: /changelog
   script: _go_app

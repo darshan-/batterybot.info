@@ -116,3 +116,7 @@ footer {
   font-family: "Times New Roman", Times, serif;
   font-size: 12px;
 }
+
+footer p {
+  margin-bottom: 5px;
+}

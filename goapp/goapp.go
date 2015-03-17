@@ -4,9 +4,13 @@ import (
 	"net/http"
 )
 
-const faqURL = "http://code.google.com/p/battery-indicator/wiki/FAQ?tm=6"
-const changelogURL = "http://code.google.com/p/battery-indicator/wiki/Changelog?tm=6"
-const sourceURL = "http://code.google.com/p/battery-indicator/"
+//const faqURL = "http://code.google.com/p/battery-indicator/wiki/FAQ?tm=6"
+//const changelogURL = "http://code.google.com/p/battery-indicator/wiki/Changelog?tm=6"
+//const sourceURL = "http://code.google.com/p/battery-indicator/"
+
+const faqURL = "https://github.com/darshan-/Battery-Indicator-Wiki/blob/master/FAQ.wiki"
+const changelogURL = "https://github.com/darshan-/Battery-Indicator-Support/blob/master/Changelog.md"
+const sourceURL = "https://github.com/darshan-/Battery-Indicator-Support/blob/master/SourceCode.md"
 
 func init() {
 	http.HandleFunc("/faq", makeRedirect(faqURL))

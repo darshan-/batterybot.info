@@ -42,7 +42,7 @@ header img {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 420px) {
   header h1 {
     padding-left: 40%;
     font-size: 34px;

@@ -3,7 +3,7 @@ Description=BatteryBot Website
 After=syslog.target network.target
 
 [Service]
-ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/run-batterybot
+ExecStart=/usr/bin/sudo -i -u darshan /home/darshan/bin/run-batterybot-site
 
 [Install]
 WantedBy=multi-user.target

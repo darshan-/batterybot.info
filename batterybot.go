@@ -62,11 +62,16 @@ func main() {
 	http.HandleFunc("/changelog", makeRedirect(changelogURL))
 	http.HandleFunc("/sourcecode", makeRedirect(sourceURL))
 
+	http.HandleFunc("/privacy", privacy)
 	http.Handle("/", http.FileServer(http.Dir("./static/")))
 
 	logF, _ := os.Create("run/log") // If error, can't write it to log, might as well proceed
 	
 	fmt.Fprintln(logF, http.ListenAndServe(fmt.Sprintf(":%v", PORT), nil))
+}
+
+func privacy(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "./static/privacy.html")
 }
 
 func makeRedirect(url string) http.HandlerFunc {
